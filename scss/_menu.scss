@@ -34,7 +34,7 @@
     position: fixed;
     top: 0;
     width: 100%;
-    opacity: 0.9;
+    opacity: 0.99;
     visibility: hidden;
     &.show {
         visibility: visible;
@@ -87,6 +87,25 @@
 
         &.show {
             transform: translate3d(0, 0, 0);
+        }
+
+        &.current > a {
+            color: $secondary-color;
+        }
+    }
+    .nav-link {
+        display: inline-block;
+        position: relative;
+        font-size: 30px;
+        text-transform: uppercase;
+        padding: 1rem 0;
+        font-weight: 500;
+        color: #fff;
+        text-decoration: none;
+        @include easeOut;
+
+        &:hover {
+            color: $secondary-color;
         }
     }
 }
