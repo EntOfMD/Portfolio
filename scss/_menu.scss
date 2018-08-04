@@ -63,4 +63,21 @@
             transform: translate3d(0, 0, 0);
         }
     }
+
+    &-brand {
+        background: $primary-color;
+        transform: translate3d(0, 100%, 0);
+        @include easeOut;
+        &.show {
+            transform: translate3d(0, 0, 0);
+        }
+
+        .portrait {
+            width: 250px;
+            height: 250px;
+            background: $portrait;
+            border-radius: 50%;
+            border: solid 3px $secondary-color;
+        }
+    }
 }
