@@ -119,6 +119,19 @@ main {
             @include easeOut;
         }
     }
+    .project-title {
+        text-align: center;
+    }
+    h3 {
+        &:hover {
+            color: $secondary-color;
+            @include easeOut;
+        }
+    }
+}
+
+.info-msg {
+    text-align: center;
 }
 
 #main-footer {
