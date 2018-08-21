@@ -9,6 +9,10 @@ $background-opacity: 0.9;
     transition: all 0.5s ease-out;
 }
 
+@mixin easeOutQuad {
+    transition: all 600ms easeOutQuad;
+}
+
 @mixin background {
     @if $show-home-image {
         &#bg-img {
